@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: rgb(69, 5, 94);
+}
+
+.feedback-container {
+  background-color: rgb(164, 121, 170);
+  width: 600px;
+  height: 300px;
+  box-shadow: 0 4px 8px rgba(102, 15, 15, 0.3);
+  border-radius: 10px;
+  position: relative;
+}
+
+.emoji-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display:flex;
+  overflow: hidden;
+}
+
+.far {
+  margin: 1px;
+  transform: translateX(0);
+  transition: transform 0.2s;
+}
+
+.rating-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10%;
+}
+
+.fa-star {
+  color: rgb(211, 180, 180);
+  cursor: pointer;
+}
+
+.fa-star.active {
+  color: rgb(247, 221, 75);
+}
